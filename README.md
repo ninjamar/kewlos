@@ -22,10 +22,15 @@ Replace version with the version you wish to download
 git clone https://github.com/ninjamar/kewlos
 ```
 ### Running
+Add `alias kewlos='(cd /path/to/kewlos && bash run.sh)'` to the default terminal startup file
+You can then run using `kewlos`
+
+### Updating
 ```bash
 cd kewlos
-bash run.sh
+git pull
 ```
+
 ## Todo
 - Automate text display process
 - Make utility file
