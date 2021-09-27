@@ -13,6 +13,10 @@ hello: ;this function writes hello to the screen
 	mov al,'O'
 	int 0x10
 	mov al,'S'
+	
+	mov al,'\n'
+	int 0x10
+	
 	int 0x10
 	mov al,'H' ; set al to 'H'
 	int 0x10 ;call ah and process the data stored in al
