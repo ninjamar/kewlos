@@ -1,5 +1,5 @@
 text: ;this function writes hello to the screen
-  mov ah, 0x0e ;set ah to tty mode
+	mov ah, 0x0e ;set ah to tty mode
 	mov al,'k' ;set al to 'H'
 	int 0x10 ;call ah and process the data stored in al
 	mov al,'e'
