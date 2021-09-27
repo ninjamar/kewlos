@@ -19,10 +19,12 @@ sudo apt-get install nasm
 Replace version with the version you wish to download
 
 ```
-wget https://github.com/ninjamar/kewlos/releases/download/kewlos-VERSION/kewlos-VERSION.tar.gz
-tar -xvzf kewlos-VERSION.tar.gz
+git clone https://github.com/ninjamar/kewlos
 ```
 ### Running
-To run cd into the target kewlos directory and run `bash run.sh`
+```bash
+cd kewlos
+bash run.sh
+```
 ## Todo
 - Automate text display process
