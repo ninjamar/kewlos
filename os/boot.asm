@@ -2,8 +2,8 @@
 
 text: ;this function writes hello to the screen
 	mov ah, 0x0e ;set ah to tty mode
-	mov al,'k'
-	int 0x10
+	mov al,'k' ;set al to 'H'
+	int 0x10 ;call ah and process the data stored in al
 	mov al,'e'
 	int 0x10
 	mov al,'w'
@@ -21,8 +21,8 @@ text: ;this function writes hello to the screen
 	int 0x10
 	
 	int 0x10
-	mov al,'H' ; set al to 'H'
-	int 0x10 ;call ah and process the data stored in al
+	mov al,'H'
+	int 0x10
 	mov al,'e'
 	int 0x10
 	mov al,'l'
