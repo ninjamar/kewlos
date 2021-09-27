@@ -11,6 +11,20 @@ hello: ;this function writes hello to the screen
 	int 0x10
 	mov al,'o'
 	int 0x10
+	mov al,' '
+	int 0x10
+	mov al,'W'
+	int 0x10
+	mov al,'o'
+	int 0x10
+	mov al,'r'
+	int 0x10
+	mov al,'l'
+	int 0x10
+	mov al,'d'
+	int 0x10
+	mov al,'!'
+	int 0x10
 
 mov dx,0 ; initalize main loop counter
 main: ;main loop
