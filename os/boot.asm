@@ -1,6 +1,6 @@
 ;this is 16 bit mode BIOS
 
-hello: ;this function writes hello to the screen
+text: ;this function writes hello to the screen
 	mov ah, 0x0e ;set ah to tty mode
 	mov al,'k'
 	int 0x10
@@ -13,8 +13,11 @@ hello: ;this function writes hello to the screen
 	mov al,'O'
 	int 0x10
 	mov al,'S'
-	
-	mov al,'\n'
+	int 0x10
+
+	mov al,0xa
+	int 0x10
+	mov al,0xd
 	int 0x10
 	
 	int 0x10
@@ -49,7 +52,7 @@ main: ;main loop
 	cmp dx,1 ;check if dx = 1
 	jne main ; if !dx = 1 jump to main
 	add dx,1 ; increase counter
-	call hello ; get value from last compare and call if true
+	call text ; get value from last compare and call if true
 	
 times 510-($-$$) db 0 ; fill rest of boot with '0'
 
