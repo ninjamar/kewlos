@@ -28,3 +28,4 @@ bash run.sh
 ```
 ## Todo
 - Automate text display process
+- Make utility file
