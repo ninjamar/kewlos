@@ -8,7 +8,7 @@ main: ;main loop
 	jne main ; if !dx = 1 jump to main
 	add dx,1 ; increase counter
 	mov si,"KewlOS"
-	call print_string
+	call print_str
 	
 times 510-($-$$) db 0 ; fill rest of boot with '0'
 
