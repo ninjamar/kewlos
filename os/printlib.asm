@@ -6,6 +6,11 @@ print_char:
 	int 0x10
 
 print_str:
+	push ax
+	push si
+	call .loop
+	
+.loop
 	lodsd
 	
 	cmp al,0
@@ -13,7 +18,7 @@ print_str:
 	
 	call print_char
 	
-	jmp print_str
+	jmp .loop
 
 .done:
 	ret
