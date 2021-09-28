@@ -14,7 +14,7 @@ print_str:
 	
 	call print_char
 	
-	jmp .print_str
+	jmp print_str
 
 .done:
 	ret
