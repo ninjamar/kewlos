@@ -2,7 +2,7 @@
 
 
 print_char:
-	mov	ah,	0x0E
+	mov ah,	0x0E
 	int 0x10
 
 print_str:
