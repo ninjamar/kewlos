@@ -6,19 +6,15 @@ print_char:
 	int 0x10
 
 print_str:
-	push ax
-	push si
-	call .loop
 	
-.loop
 	lodsd
 	
-	cmp al,0
+	cmp al,0x00
 	je .done
 	
 	call print_char
 	
-	jmp .loop
+	jmp .print_str
 
 .done:
 	ret
