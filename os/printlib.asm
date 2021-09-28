@@ -9,7 +9,7 @@ print_str:
 	
 	lodsd
 	
-	cmp al,0x00
+	cmp al,0
 	je .done
 	
 	call print_char
