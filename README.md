@@ -27,7 +27,7 @@ git clone -b stable --single-branch https://github.com/ninjamar/kewlos
 git clone https://github.com/ninjamar/kewlos 
 ```
 ### Running
-Add `alias kewlos='(cd KEWLOSPATH && LD_LIBRARY_PATH=$LD_LIBRARY_PATH:KEWLOSPATH/lib && cd os && nasm -f bin boot.asm -o KEWLOSPATH/boot.bin && qemu-system-x86_64 KEWLOSPATH/boot.bin)'` to the default terminal startup file
+Add `alias kewlos='(cd KEWLOSPATH && LD_LIBRARY_PATH=$LD_LIBRARY_PATH:KEWLOSPATH/lib && cd src && nasm -f bin boot.asm -o KEWLOSPATH/boot.bin && qemu-system-x86_64 KEWLOSPATH/boot.bin)'` to the default terminal startup file
 You can then run using `kewlos`
 
 ### Updating
