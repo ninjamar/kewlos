@@ -1,16 +1,14 @@
 ;this is 16 bit mode BIOS
+[ORG 0x7C00]
 
-%include 'printlib.asm' ;use the utils file
-
-mov dx,0 ; initalize main loop counter
-main: ;main loop
-	cmp dx,1 ;check if dx = 1
-	jne main ; if !dx = 1 jump to main
-	add dx,1 ; increase counter
-	mov si,"KewlOS"
+main:
+	mov si,msg
 	call print_str
 	
-times 510-($-$$) db 0 ; fill rest of boot with '0'
+	jmp $
 
 
-dw 0xaa55 ; some sort of magic number
+%include 'printlib.asm'
+msg db "KewlOS,0
+times 510-($-$$) db 0
+dw 0xaa55
