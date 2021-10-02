@@ -8,7 +8,7 @@ main:
 	jmp $
 
 
-%include 'printlib.asm'
+%include 'iolib.asm'
 msg db "KewlOS",0
 times 510-($-$$) db 0
 dw 0xaa55
