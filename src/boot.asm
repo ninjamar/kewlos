@@ -6,11 +6,11 @@ main:
 	mov si,msg
 	call print_str
 	
-	jmp .loop
+	jmp m2
 
-.loop:
+m2:
 	call get_keypress_echo
-	jmp .loop
+	jmp m2
 
 %include 'iolib.asm'
 msg db "KewlOS",0
