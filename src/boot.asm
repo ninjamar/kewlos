@@ -9,7 +9,7 @@ main:
 	jmp .loop
 
 .loop:
-	get_keypress_echo
+	call get_keypress_echo
 	jmp .loop
 
 %include 'iolib.asm'
