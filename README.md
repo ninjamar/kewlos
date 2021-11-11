@@ -1,5 +1,5 @@
 # kewlos
-I'M STOPPING THIS PROJECT AND STARTING A KERNEL (here)[https://github.com/ninjamar/nmk]!
+I'M STOPPING THIS PROJECT AND STARTING A KERNEL [here](https://github.com/ninjamar/nmk)
 
 kewlos is an operating system I made in NASM assembly
 
